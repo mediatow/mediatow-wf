@@ -18,6 +18,7 @@ $img_height = get_post_meta($pageid, "imageheight", true);
 ?>
 
 <div id="content-top"></div>
+
 <div id="content-border">
     <div id="content">
     	<div class="ribbon-container">

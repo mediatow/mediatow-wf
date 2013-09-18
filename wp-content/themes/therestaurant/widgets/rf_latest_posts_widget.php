@@ -46,11 +46,14 @@ class rf_latest_posts_widget extends WP_Widget {
 		// Display a containing div ?>
 		<div class="rf_latest_posts_widget">
 			<?php $count = 1;
-			query_posts('&cat='.$categories.'&posts_per_page='.$postcount);
-            while( have_posts() ) : the_post();
+			query_posts('&cat='.$categories.'&posts_per_page='.$postcount); ?>
+			<div class="post-item <?php if ($count == 1) echo 'first'; ?>">
+
+            <?php 
+                while( have_posts() ) : the_post();
                 $title = get_the_title();
                 $url = get_permalink(); ?>
-                <div class="post-item <?php if ($count == 1) echo 'first'; ?>">
+                <div class="each-post-item <?php if ($count == 1) echo 'first'; ?>">
                     <?php if ($showimages) { ?>
                     <div class="postimage-container">
                     	<?php $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'fullwidth', false, '' ); ?>
@@ -74,7 +77,7 @@ class rf_latest_posts_widget extends WP_Widget {
 			endwhile;
             wp_reset_query(); ?>
 		</div>
-
+	</div>
 		<?php 
 		// After widget (defined by themes)
 		echo $after_widget;

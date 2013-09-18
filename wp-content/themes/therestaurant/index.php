@@ -7,7 +7,9 @@ if (is_category()) {
 }
 ?>
 <div id="content-top"></div>
+
 <div id="content-border">
+    
     <div id="content">
     	<?php if ($pagetitle) { ?>
         <div class="ribbon-container">
