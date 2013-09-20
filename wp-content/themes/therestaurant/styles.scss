@@ -1,6 +1,64 @@
-//put all your css here
-#someDiv {
-	a {
+#homePageCtas {
+	background: #bdbcbc;
+	height: 250px;
+	padding-top: 15px;
 
+	li{
+		width:30%;
+		height:90%;
+		background:#cccccc;
+		float: left;
+		margin: 0 10px 0 0;
+
+		&:first-child{
+			margin-left: 37px;
+
+			h3{
+				background-color: #999999;
+			}
+		}
+		&:last-child{
+			margin-right: 0px;
+
+			h3{
+				background-color: #555555;
+				margin-bottom: 0;
+			}
+		}
+
+		h3{
+			font-size: 14pt;
+			font-weight: bold;
+			background:#444444;
+			padding: 4px;
+			margin: 15px 0 7px;
+		}
+	}
+	
+	#events{
+		width: 100%;
+		display: block;
+
+		li{
+			float: none;
+			margin: 0;
+			display: block;
+			width: 100%;
+
+			a {
+				display: block;
+				background: #eee;
+				padding: 5px;
+				border-bottom: 1px solid #ddd;
+				border-top: 1px solid #fff;
+
+				&:hover{
+					background-color: #888;
+					color: #eee;
+					cursor: pointer;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }

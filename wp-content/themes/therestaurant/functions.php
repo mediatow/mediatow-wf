@@ -143,6 +143,7 @@ add_action('init', 'custom_post_type_slider');
 
 //register the sidebars
 if ( function_exists('register_sidebar') ) {
+	/*
 	register_sidebar(array(
 		'name' => 'Frontpage top (max 3)',
 		'id' => 'frontpage',
@@ -151,6 +152,7 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<div class="ribbon-container"><div class="title-container"><div class="title"><div class="bar-left"></div><div class="bar-right"></div><h3 class="widget-title">',
 		'after_title' => '</h3></div></div></div>'
 	));
+	*/
 	register_sidebar(array(
 		'name' => 'Frontpage bottom',
 		'id' => 'frontpage2',

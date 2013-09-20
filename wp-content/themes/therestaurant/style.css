@@ -456,7 +456,7 @@ background-color:transparent;
 #content-bottom, #widget-bottom {
 	display: inline-block;
 	background: url('images/content_bottom.png') 50% top no-repeat;
-	height: 30px;
+	/*height: 30px;*/
 	width: 960px;
 }
 #content-border, #widget-border {
